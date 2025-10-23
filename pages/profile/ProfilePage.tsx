@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { usePage, useLoading, useSearch } from '../App';
+import { usePage, useLoading, useSearch } from '../../App';
 
 const ProfilePage: React.FC = () => {
   const { setTitle } = usePage();

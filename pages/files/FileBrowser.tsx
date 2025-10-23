@@ -1,8 +1,8 @@
 
 import React, { useEffect, useState, useRef } from 'react';
-import { FileItem as FileItemType, FileType } from '../types';
-import Icon from '../components/Icon';
-import { usePage, useLoading } from '../App';
+import { FileItem as FileItemType, FileType } from '../../types';
+import Icon from '../../components/Icon';
+import { usePage, useLoading } from '../../App';
 
 const FileItemRow: React.FC<{ item: FileItemType }> = ({ item }) => {
     const [menuOpen, setMenuOpen] = useState(false);

@@ -1,13 +1,12 @@
-
 import React, { useState, useEffect, createContext, useContext, useMemo } from 'react';
 import { HashRouter, Routes, Route, Outlet } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
-import ProfilePage from './pages/ProfilePage';
-import SettingsPage from './pages/SettingsPage';
+import ProfilePage from './pages/profile/ProfilePage';
+import SettingsPage from './pages/settings/SettingsPage';
 import ProgressBar from './components/ProgressBar';
-import Dashboard from './pages/Dashboard';
-import PlaceholderPage from './pages/PlaceholderPage';
+import Dashboard from './pages/dashboard/Dashboard';
+import PlaceholderPage from './pages/placeholder/PlaceholderPage';
 
 // Project Pages
 import ProjectListPage from './pages/projects/ProjectListPage';
@@ -252,6 +251,7 @@ const App: React.FC = () => {
 
                                     {/* Other Pages */}
                                     <Route path="profile" element={<ProfilePage />} />
+                                    {/* Fix: Changed _Route to Route to fix typo. */}
                                     <Route path="settings" element={<SettingsPage />} />
                                     <Route path="shared" element={<PlaceholderPage title="Benimle Paylaşılanlar" />} />
                                     <Route path="recent" element={<PlaceholderPage title="Son Aktiviteler" />} />

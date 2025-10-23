@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { useTheme, usePage, useLoading, useSearch } from '../App';
+import { useTheme, usePage, useLoading, useSearch } from '../../App';
 
 const SettingsPage: React.FC = () => {
   const { theme, toggleTheme } = useTheme();

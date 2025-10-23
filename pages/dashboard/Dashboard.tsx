@@ -1,9 +1,9 @@
 
 import React, { useEffect, useState } from 'react';
-import { usePage, useLoading, useSearch } from '../App';
-import Icon from '../components/Icon';
-import { getProjects } from '../data';
-import { Project, ProjectStatus } from '../types';
+import { usePage, useLoading, useSearch } from '../../App';
+import Icon from '../../components/Icon';
+import { getProjects } from '../../data';
+import { Project, ProjectStatus } from '../../types';
 import { Link } from 'react-router-dom';
 
 const StatCard: React.FC<{ icon: string; label: string; value: string; color: string; }> = ({ icon, label, value, color }) => (
