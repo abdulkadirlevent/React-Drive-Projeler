@@ -200,7 +200,7 @@ const Layout = () => {
       <Sidebar />
       <div className="flex flex-col flex-1 w-full overflow-hidden">
         <Header />
-        <main className="flex-1 bg-white dark:bg-[#191919] rounded-tl-2xl overflow-y-auto p-4 md:p-6">
+        <main className="flex-1 bg-white dark:bg-[#191919] md:rounded-tl-2xl overflow-y-auto p-4 md:p-6">
           <div className={`transition-opacity duration-300 ease-in-out ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
             <Outlet />
           </div>
